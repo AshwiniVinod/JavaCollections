@@ -43,11 +43,16 @@ public class Main {
         //return the squer array in assending order
         int[] nums ={-4,-1,0,3,10};
         Solutions solutions=new SolutionImpl();
-        int[] count1=solutions.assendingArrayofNumbers(nums);
+        //int[] count1=solutions.assendingArrayofNumbers(nums);
+         //MERGE SOART
+        int[] inputArray={ 5, 1, 6};
+        int[] count1=solutions.mergSortOfNumberArray(inputArray,inputArray.length);
         for (int i:
              count1) {
             System.out.print(i+",");
         }
+
+
 
 
     }
