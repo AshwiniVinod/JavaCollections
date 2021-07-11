@@ -1,5 +1,7 @@
 package com.learnprogramming;
 
+import com.learnprogramming.BST.BinarySearchTree;
+import com.learnprogramming.BST.Node;
 import com.learnprogramming.arrays.Dvd;
 import com.learnprogramming.arrays.SolutionImpl;
 import com.learnprogramming.arrays.Solutions;
@@ -46,14 +48,24 @@ public class Main {
         //int[] count1=solutions.assendingArrayofNumbers(nums);
          //MERGE SOART
         int[] inputArray={ 5, 1, 6};
-        int[] count1=solutions.mergSortOfNumberArray(inputArray,inputArray.length);
+        /*int[] count1=solutions.mergSortOfNumberArray(inputArray,inputArray.length);
         for (int i:
              count1) {
             System.out.print(i+",");
-        }
+        }   */
 
-
-
+        //binary tree search
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
+        tree.inorder();
+        Node root=tree.search(tree.getRoot(), 40);
+        System.out.println("Key present"+root.getKey());
 
     }
 }
